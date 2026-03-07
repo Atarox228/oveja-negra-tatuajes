@@ -1,10 +1,10 @@
-import { Hero } from "./components/hero";
-import { About } from "./components/about";
-import { Values } from "./components/values";
-import { ArtAndTattoo } from "./components/art-and-tattoo";
-import { Clients } from "./components/clients";
-import { Location } from "./components/location";
-import { Footer } from "./components/footer";
+import { Hero } from "./components/sections/hero";
+import { About } from "./components/sections/about";
+import { Values } from "./components/sections/values";
+import { ArtAndTattoo } from "./components/sections/art-and-tattoo";
+import { Clients } from "./components/sections/clients";
+import { Location } from "./components/sections/location";
+import { Footer } from "./components/sections/footer";
 
 function App() {
   return (

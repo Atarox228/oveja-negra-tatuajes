@@ -1,18 +1,18 @@
 import { MapPin, Clock, Phone } from "lucide-react";
+import { SectionHeader } from "../common/SectionHeader";
+import { locationContent } from "../../data/content";
 
 export function Location() {
+  const { address, hours, phone, booking, mapEmbedUrl } = locationContent;
+
   return (
     <section className="py-20 px-4 md:px-8 bg-white text-black">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl mb-6 uppercase tracking-wide">
-            Ubicación
-          </h2>
-          <div className="w-20 h-1 bg-black mx-auto mb-6"></div>
-          <p className="text-xl text-gray-700 max-w-2xl mx-auto">
-            Visítanos en nuestro estudio
-          </p>
-        </div>
+        <SectionHeader
+          heading={locationContent.heading}
+          subheading={locationContent.subheading}
+          theme="light"
+        />
 
         <div className="grid md:grid-cols-2 gap-12">
           <div>
@@ -24,8 +24,9 @@ export function Location() {
                 <div>
                   <h3 className="text-xl mb-2 uppercase">Dirección</h3>
                   <p className="text-gray-700">
-                    Calle del Arte, 123<br />
-                    28001 Madrid, España
+                    {address.street}
+                    <br />
+                    {address.city}
                   </p>
                 </div>
               </div>
@@ -37,9 +38,12 @@ export function Location() {
                 <div>
                   <h3 className="text-xl mb-2 uppercase">Horario</h3>
                   <p className="text-gray-700">
-                    Lunes - Viernes: 10:00 - 20:00<br />
-                    Sábados: 11:00 - 18:00<br />
-                    Domingos: Cerrado
+                    {hours.map((line, index) => (
+                      <span key={index}>
+                        {line}
+                        {index < hours.length - 1 && <br />}
+                      </span>
+                    ))}
                   </p>
                 </div>
               </div>
@@ -50,21 +54,16 @@ export function Location() {
                 </div>
                 <div>
                   <h3 className="text-xl mb-2 uppercase">Teléfono</h3>
-                  <p className="text-gray-700">
-                    +34 123 456 789
-                  </p>
+                  <p className="text-gray-700">{phone}</p>
                 </div>
               </div>
             </div>
 
             <div className="p-6 border-2 border-black">
-              <h3 className="text-xl mb-4 uppercase">Reserva Tu Cita</h3>
-              <p className="text-gray-700 mb-4">
-                Trabajamos con cita previa para garantizar la mejor atención personalizada. 
-                Contáctanos para agendar tu sesión.
-              </p>
+              <h3 className="text-xl mb-4 uppercase">{booking.title}</h3>
+              <p className="text-gray-700 mb-4">{booking.description}</p>
               <button className="w-full py-3 bg-black text-white hover:bg-gray-800 transition-colors uppercase tracking-wide">
-                Hacer una Reserva
+                {booking.buttonLabel}
               </button>
             </div>
           </div>
@@ -72,7 +71,7 @@ export function Location() {
           <div className="relative h-[500px]">
             <div className="w-full h-full border-4 border-black">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.396988967183!2d-3.7037902!3d40.4167754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42288a6bfedd93%3A0xa97fc5e55d1e7a9e!2sPuerta%20del%20Sol!5e0!3m2!1ses!2ses!4v1234567890"
+                src={mapEmbedUrl}
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -80,7 +79,7 @@ export function Location() {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Ubicación del estudio"
-              ></iframe>
+              />
             </div>
           </div>
         </div>
