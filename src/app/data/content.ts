@@ -1,9 +1,10 @@
+import { images } from "./images";
 // ─── Hero ────────────────────────────────────────────────────────────────────
 export const heroContent = {
-  title: "Ink & Soul",
-  subtitle: "Arte en tu piel, historias para toda la vida",
-  backgroundImage:
-    "https://images.unsplash.com/photo-1761276297612-f1a149dbdc1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxibGFjayUyMHRhdHRvbyUyMGFydGlzdCUyMHdvcmt8ZW58MXx8fHwxNzcyMDY4NDcwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+  title: "Oveja Negra Descarriada",
+  subtitle: "Arte en tu piel, perforaciones en tu cuerpo, estiliza tu vida",
+  backgroundImage: images.hero
+    // "https://images.unsplash.com/photo-1761276297612-f1a149dbdc1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxibGFjayUyMHRhdHRvbyUyMGFydGlzdCUyMHdvcmt8ZW58MXx8fHwxNzcyMDY4NDcwfDA&ixlib=rb-4.1.0&q=80&w=1080",
 };
 
 // ─── About ───────────────────────────────────────────────────────────────────
@@ -80,7 +81,7 @@ export const artAndTattooContent = {
     text: "\"El arte es la forma más intensa de individualismo que el mundo ha conocido.\"",
     author: "Oscar Wilde",
     image: {
-      src: "https://images.unsplash.com/photo-1764640848891-9b23d3632ccf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZXRhaWxlZCUyMGJsYWNrJTIwaW5rJTIwdGF0dG9vfGVufDF8fHx8MTc3MjA2ODQ3MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      src: images.art,
       alt: "Arte del tatuaje",
     },
   },
@@ -97,33 +98,33 @@ export const clientsContent = {
   tattoos: [
     {
       id: 1,
-      url: "https://images.unsplash.com/photo-1653845508077-3a15db13f807?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnZW9tZXRyaWMlMjB0YXR0b28lMjBkZXNpZ258ZW58MXx8fHwxNzcxOTc3MTUzfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      alt: "Tatuaje geométrico",
+      url: images.gallery[0],
+      alt: "Piercing Oreja",
     },
     {
       id: 2,
-      url: "https://images.unsplash.com/photo-1759806919529-7db386dd4741?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cmFkaXRpb25hbCUyMHRhdHRvbyUyMGFydHdvcmt8ZW58MXx8fHwxNzcyMDY4NDcxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      alt: "Tatuaje tradicional",
+      url: images.gallery[1],
+      alt: "Piercing Nariz",
     },
     {
       id: 3,
-      url: "https://images.unsplash.com/photo-1759346771288-ac905d1b1abf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwdGF0dG9vJTIwZGVzaWdufGVufDF8fHx8MTc3MjA2NzM5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-      alt: "Tatuaje minimalista",
+      url: images.gallery[2],
+      alt: "Piercing Torso",
     },
     {
       id: 4,
-      url: "https://images.unsplash.com/photo-1764640848891-9b23d3632ccf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZXRhaWxlZCUyMGJsYWNrJTIwaW5rJTIwdGF0dG9vfGVufDF8fHx8MTc3MjA2ODQ3MXww&ixlib=rb-4.1.0&q=80&w=1080",
-      alt: "Tatuaje detallado",
+      url: images.gallery[3],
+      alt: "Tatuaje Brazo",
     },
     {
       id: 5,
-      url: "https://images.unsplash.com/photo-1761276297612-f1a149dbdc1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxibGFjayUyMHRhdHRvbyUyMGFydGlzdCUyMHdvcmt8ZW58MXx8fHwxNzcyMDY4NDcwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      alt: "Trabajo de tatuaje",
+      url: images.gallery[4],
+      alt: "Tatuaje Pierna",
     },
     {
       id: 6,
-      url: "https://images.unsplash.com/photo-1653845508077-3a15db13f807?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnZW9tZXRyaWMlMjB0YXR0b28lMjBkZXNpZ258ZW58MXx8fHwxNzcxOTc3MTUzfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      alt: "Diseño geométrico",
+      url: images.gallery[5],
+      alt: "Tatuaje Muslo",
     },
   ],
 };
