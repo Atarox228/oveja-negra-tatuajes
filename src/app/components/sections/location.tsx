@@ -3,7 +3,7 @@ import { SectionHeader } from "../common/SectionHeader";
 import { locationContent } from "../../data/content";
 
 export function Location() {
-  const { address, hours, phone, booking, mapEmbedUrl } = locationContent;
+  const { address, hours, phone, mapEmbedUrl } = locationContent;
 
   return (
     <section className="py-20 px-4 md:px-8 bg-white text-black">

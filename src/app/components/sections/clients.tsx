@@ -2,7 +2,7 @@ import { SectionHeader } from "../common/SectionHeader";
 import { clientsContent } from "../../data/content";
 
 export function Clients() {
-  const { tattoos, cta } = clientsContent;
+  const { tattoos } = clientsContent;
 
   return (
     <section className="py-20 px-4 md:px-8 bg-black text-white">
