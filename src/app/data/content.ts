@@ -11,9 +11,15 @@ export const heroContent = {
 export const aboutContent = {
   heading: "¿Quiénes Somos?",
   paragraphs: [
-    "Somos un estudio de tatuaje especializado en arte corporal con más de 10 años de experiencia. Nuestro enfoque está en crear piezas únicas que cuenten tu historia personal.",
-    "Cada tatuaje es una colaboración entre el artista y el cliente, donde transformamos ideas y emociones en arte permanente. Trabajamos con dedicación y pasión para asegurar que cada diseño sea una obra maestra.",
-    "En nuestro estudio, no solo hacemos tatuajes, creamos legados que permanecerán contigo para siempre. Tu piel es nuestro lienzo, y tu historia es nuestra inspiración.",
+    "Oveja Negra nace como un espacio donde el arte y la identidad se encuentran.",
+    "Creemos que el tatuaje es mucho más que una imagen sobre la piel: es una forma de expresión, una marca personal que representa momentos, ideas y emociones que forman parte de quién sos.",
+    "En un mundo que muchas veces empuja a vivir en automático, buscamos que cada tatuaje sea un recordatorio de lo que te hace único. Una pieza con significado, con intención, con historia.",
+    "Nuestro trabajo consiste en transformar ideas en arte. Crear diseños que no solo se vean bien, sino que también tengan un propósito para quien los lleva.",
+    "Cada tatuaje es un símbolo.",
+    "Un momento.",
+    "Una decisión.",
+    "Porque dentro de cada persona existe un mundo propio, y el arte puede ser una forma de recordarlo todos los días.",
+    "En Oveja Negra celebramos lo auténtico, lo genuino y lo diferente."
   ],
   image: {
     src: "https://images.unsplash.com/photo-1763888647744-c566e723c396?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0YXR0b28lMjBhcnRpc3QlMjBzdHVkaW8lMjBpbnRlcmlvcnxlbnwxfHx8fDE3NzIwNjg0NzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
@@ -90,7 +96,7 @@ export const artAndTattooContent = {
 // ─── Clients / Gallery ────────────────────────────────────────────────────────
 export const clientsContent = {
   heading: "Nuestros Clientes",
-  subheading: "Galería de trabajos realizados. Cada tatuaje es una historia única",
+  subheading: "Galería de trabajos realizados. Cada uno es una historia única",
   cta: {
     text: "¿Listo para tu próximo tatuaje?",
     buttonLabel: "Contáctanos",
@@ -134,15 +140,15 @@ export const locationContent = {
   heading: "Ubicación",
   subheading: "Visítanos en nuestro estudio",
   address: {
-    street: "Calle del Arte, 123",
-    city: "28001 Madrid, España",
+    street: "Av. Ángel T. de Alvear 2980",
+    city: "Don Torcuato, Provincia de Buenos Aires",
   },
   hours: [
-    "Lunes - Viernes: 10:00 - 20:00",
-    "Sábados: 11:00 - 18:00",
-    "Domingos: Cerrado",
+    "Lunes - Domingos: 13:00 - 23:00",
+    // "Sábados: 11:00 - 18:00",
+    // "Domingos: Cerrado",
   ],
-  phone: "+34 123 456 789",
+  phone: "+54 11 2678 0827",
   booking: {
     title: "Reserva Tu Cita",
     description:
@@ -150,27 +156,27 @@ export const locationContent = {
     buttonLabel: "Hacer una Reserva",
   },
   mapEmbedUrl:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.396988967183!2d-3.7037902!3d40.4167754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42288a6bfedd93%3A0xa97fc5e55d1e7a9e!2sPuerta%20del%20Sol!5e0!3m2!1ses!2ses!4v1234567890",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3288.0!2d-58.6189511!3d-34.4860496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbb33430b678d%3A0xa051c5a77d654bf8!2sAv.+%C3%81ngel+T.+de+Alvear+2980%2C+B1611ABO+Gran+Buenos+Aires!5e0!3m2!1ses!2sar!4v1",
 };
 
 // ─── Footer ───────────────────────────────────────────────────────────────────
 export const footerContent = {
   brand: {
-    name: "Ink & Soul",
-    tagline: "Estudio de tatuaje especializado en arte corporal en blanco y negro. Creamos arte que cuenta historias.",
+    name: "Oveja Negra",
+    tagline: "Tatuajes | Piercings | Venta de piezas ",
   },
   contact: {
-    phone: "+34 123 456 789",
-    email: "info@inkandsoul.com",
-    address: "Calle del Arte, 123\n28001 Madrid",
+    phone: "+54 11 2678 0827",
+    // email: "info@inkandsoul.com",
+    address: "Av. Ángel T. de Alvear 2980\nDon Torcuato",
   },
   social: {
     hashtag: "#InkAndSoul",
     links: [
-      { platform: "Instagram" as const, href: "https://instagram.com" },
-      { platform: "Facebook" as const, href: "https://facebook.com" },
-      { platform: "Email" as const, href: "mailto:info@inkandsoul.com" },
+      { platform: "Instagram" as const, href: "https://www.instagram.com/ovejadescarriadatatto/" },
+      // { platform: "Facebook" as const, href: "https://facebook.com" },
+      // { platform: "Email" as const, href: "mailto:info@inkandsoul.com" },
     ],
   },
-  copyright: "© 2026 Ink & Soul. Todos los derechos reservados.",
+  copyright: "© 2026 Oveja Negra. Todos los derechos reservados.",
 };

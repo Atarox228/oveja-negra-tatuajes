@@ -29,8 +29,8 @@ export function Footer() {
                 <span className="text-gray-300">{contact.phone}</span>
               </div>
               <div className="flex items-center gap-3">
-                <Mail className="w-5 h-5" />
-                <span className="text-gray-300">{contact.email}</span>
+                {/* <Mail className="w-5 h-5" />
+                <span className="text-gray-300">{contact.email}</span> */}
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="w-5 h-5" />
@@ -58,8 +58,8 @@ export function Footer() {
                 );
               })}
             </div>
-            <p className="text-gray-300 mt-6">Comparte tu tatuaje con nosotros usando</p>
-            <p className="text-white mt-2 uppercase tracking-wide">{social.hashtag}</p>
+            {/* <p className="text-gray-300 mt-6">Comparte tu tatuaje con nosotros usando</p>
+            <p className="text-white mt-2 uppercase tracking-wide">{social.hashtag}</p> */}
           </div>
         </div>
 

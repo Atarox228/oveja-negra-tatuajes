@@ -33,12 +33,12 @@ export function Clients() {
           ))}
         </div>
 
-        <div className="mt-16 text-center">
+        {/* <div className="mt-16 text-center">
           <p className="text-xl text-gray-300 mb-4">{cta.text}</p>
           <button className="px-8 py-3 border-2 border-white hover:bg-white hover:text-black transition-all duration-300 uppercase tracking-wide">
             {cta.buttonLabel}
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

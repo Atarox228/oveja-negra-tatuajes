@@ -59,13 +59,13 @@ export function Location() {
               </div>
             </div>
 
-            <div className="p-6 border-2 border-black">
+            {/* <div className="p-6 border-2 border-black">
               <h3 className="text-xl mb-4 uppercase">{booking.title}</h3>
               <p className="text-gray-700 mb-4">{booking.description}</p>
               <button className="w-full py-3 bg-black text-white hover:bg-gray-800 transition-colors uppercase tracking-wide">
                 {booking.buttonLabel}
               </button>
-            </div>
+            </div> */}
           </div>
 
           <div className="relative h-[500px]">
