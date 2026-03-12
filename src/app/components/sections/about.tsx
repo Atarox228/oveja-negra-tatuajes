@@ -18,11 +18,16 @@ export function About() {
           </div>
 
           <div className="relative">
-            <img
-              src={aboutContent.image.src}
-              alt={aboutContent.image.alt}
-              className="w-full h-[500px] object-cover shadow-2xl"
-            />
+            <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-[500px] object-cover shadow-2xl"
+            >
+              <source src={`${import.meta.env.BASE_URL}videos/local.webm`} type="video/webm" />
+              <source src={`${import.meta.env.BASE_URL}videos/local.mp4`} type="video/mp4" />
+            </video>
             <div className="absolute inset-0 border-4 border-black -translate-x-4 -translate-y-4 -z-10" />
           </div>
         </div>

@@ -21,9 +21,8 @@ export const aboutContent = {
     "Porque dentro de cada persona existe un mundo propio, y el arte puede ser una forma de recordarlo todos los días.",
     "En Oveja Negra celebramos lo auténtico, lo genuino y lo diferente."
   ],
-  image: {
-    src: "https://images.unsplash.com/photo-1763888647744-c566e723c396?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0YXR0b28lMjBhcnRpc3QlMjBzdHVkaW8lMjBpbnRlcmlvcnxlbnwxfHx8fDE3NzIwNjg0NzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    alt: "Nuestro estudio",
+  video: {
+    src: "/videos/local.mp4",   // nombre del archivo que subiste
   },
 };
 
@@ -162,7 +161,7 @@ export const locationContent = {
 // ─── Footer ───────────────────────────────────────────────────────────────────
 export const footerContent = {
   brand: {
-    name: "Oveja Negra",
+    name: "Oveja Negra Descarriada",
     tagline: "Tatuajes | Piercings | Venta de piezas ",
   },
   contact: {
