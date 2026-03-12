@@ -132,6 +132,18 @@ export const clientsContent = {
       alt: "Tatuaje Muslo",
     },
   ],
+  videos: [
+    {
+      id: 1,
+      src: `${import.meta.env.BASE_URL}videos/tatuaje.mp4`,
+      poster: "", // opcional: ruta a una imagen de preview
+    },
+    {
+      id: 2,
+      src: `${import.meta.env.BASE_URL}videos/pircing.mp4`,
+      poster: "",
+    },
+  ],
 };
 
 // ─── Location ─────────────────────────────────────────────────────────────────
