@@ -23,7 +23,7 @@ export function About() {
             muted
             loop
             playsInline
-            className="w-full h-[500px] object-cover shadow-2xl"
+            className="w-full h-[700px] object-cover shadow-2xl"
             >
               <source src={`${import.meta.env.BASE_URL}videos/local.webm`} type="video/webm" />
               <source src={`${import.meta.env.BASE_URL}videos/local.mp4`} type="video/mp4" />
