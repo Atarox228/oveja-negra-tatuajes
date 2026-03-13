@@ -37,8 +37,9 @@ export function Clients() {
                 <video
                   src={video.src}
                   poster={video.poster || undefined}
-                  controls
+                  autoPlay
                   muted
+                  loop
                   playsInline
                   className="w-full h-full object-cover"
                 />
